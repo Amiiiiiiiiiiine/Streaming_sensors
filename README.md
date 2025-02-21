@@ -2,18 +2,19 @@
 This project aims to collect, transform, and visualize real-time sensor data using **Snowflake** and **Power BI**, with a flexible pipeline that can evolve into a more robust solution over time.
 
 ## 🏗️ **Tech Stack**
-- **Ingestion**: JSON/CSV files sent to cloud storage (S3/Azure Blob) via **Snowpipe** for near real-time ingestion.
-- **Storage**: **Snowflake** (staging tables, transformed tables for analytics, real-time data handling).
-- **Transformation**: **SQL** in Snowflake (views, stored procedures).
-- **Automation**: **Snowflake Streams & Tasks** to automate the processing of new data.
-- **Visualization**: **Power BI** with **DirectQuery** to display real-time data.
-- **Version Control**: **Git** with **GitHub** (to version all code, SQL, ingestion scripts).
-
-  **Future Improvements**:
-  - Transition to streaming solutions like **Kafka** or **MQTT**.
-  - Add **dbt** to manage more complex transformations.
-  - Integrate **Airflow** or **Prefect** for advanced orchestration.
-  - Add **Kubernetes** for container management and orchestration.
+| **Catégorie**        | **Choix Simple (V1)**                    | **Amélioration Future (V2+)** |
+| -------------------- | ---------------------------------------- | ----------------------------- |
+| **Version Control**  | Git + GitHub / GitLab                    | GitHub Actions (CI/CD)        |
+| **Ingestion**        | Fichiers JSON/CSV chargés via Snowpipe   | Kafka / MQTT (streaming)      |
+| **Stockage**         | Tables Snowflake (staging + transformée) | Data Vault / Time Travel      |
+| **Transformation**   | SQL (views, stored procedures)           | dbt (Data Build Tool)         |
+| **Orchestration**    | Snowflake Streams & Tasks                | Apache Airflow / Prefect      |
+| **Automatisation**   | Manuelle via scripts                     | Terraform (Infra as Code)     |
+| **Conteneurisation** | Docker pour les scripts d'ingestion      | Kubernetes (orchestration)    |
+| **Visualisation**    | Power BI (DirectQuery)                   | Streamlit / Looker / Tableau  |
+| **Monitoring**       | Snowflake Query Logging                  | Grafana / Datadog / ELK Stack |
+| **Déploiement**      | Manuellement avec Git                    | Automatisation via CI/CD      |
+| **Infrastructure**   | Snowflake & S3                           | Kubernetes (GKE, AKS, EKS)    |
 
 ## 📂 **Repo Structure**
 ```
