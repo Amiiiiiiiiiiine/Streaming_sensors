@@ -1,3 +1,5 @@
+# 📊 **Real-Time Sensor Data Pipeline**
+
 ## 📌 **The GOAL**
 This project aims to collect, transform, and visualize real-time sensor data using **Snowflake** and **Power BI**, with a flexible pipeline that can evolve into a more robust solution over time.
 
@@ -29,3 +31,16 @@ This project aims to collect, transform, and visualize real-time sensor data usi
  ┣ 📄 .gitignore
  ┣ 📄 README.md  # Project explanation and getting started guide
 ```
+
+## 🚀 **Getting Started**
+
+### Prerequisites
+Before starting, make sure you have the following:
+- Python 3.x
+- Snowflake account and access
+- Power BI account (for visualization)
+- Access to a Cloud Storage solution (S3/Azure Blob)
+
+
+
+
