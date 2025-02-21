@@ -2,7 +2,7 @@
 This project aims to collect, transform, and visualize real-time sensor data using **Snowflake** and **Power BI**, with a flexible pipeline that can evolve into a more robust solution over time.
 
 ## 🏗️ **Tech Stack**
-| **Catégorie**        | **Choix Simple (V1)**                    | **Amélioration Future (V2+)** |
+| **Catégorie**        | ** (V1)**                    | ** (V2+)** |
 | -------------------- | ---------------------------------------- | ----------------------------- |
 | **Version Control**  | Git + GitHub / GitLab                    | GitHub Actions (CI/CD)        |
 | **Ingestion**        | Fichiers JSON/CSV chargés via Snowpipe   | Kafka / MQTT (streaming)      |
